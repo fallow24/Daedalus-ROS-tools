@@ -18,7 +18,7 @@ This is a node that reads a Pointcloud as well as pose measurements from ROS top
  The topics can be modified directly in the .cpp file.
 
 ### file_writer_on_rest
-Does the same as the above, but only writes on disk if the last <N_PAST_POSES> recorded poses had a small difference of at most <EPS_POSE_DIFF>, i.e., the vehicle was resting for a significant amount of time.
+Does the same as the above, but only writes on disk if the last N_PAST_POSES recorded poses had a small difference of at most EPS_POSE_DIFF, i.e., the vehicle was resting for a significant amount of time.
 Both parameters can be tunes in the .cpp file and are defaulted to:
  - N_PAST_POSES = 50   # used for 200Hz input
  - EPS_POSE_DIFF = 0.001   # small number, must be of larger order than system noise!!! 
@@ -40,16 +40,16 @@ Usually usefull when checking if your installation works or for debugging.
 ## Dependency list
 You need to have ROS installed and a catkin workspace available.
 Tested with both noetic, kinetic, and melodic and works with Ubuntu 18.04 as well as 20.04. 
-Usually, an installation of ros-<distro>-desktop-full will do the trick.
+Usually, an installation of ros-'distro'-desktop-full will do the trick.
 However, if you are having problems with your dependencies, or want to keep a minimal installation, here is a list of packages you have to install:
  - ros-'distro'-geometry-msgs
- - ros-<distro>-std-msgs
- - ros-<distro>-sensor-msgs
- - ros-<distro>-tf
- - ros-<distro>-tf2
- - ros-<distro>-pcl-conversions
- - ros-<distro>-pcl-msgs
- - ros-<distro>-pcl-ros
- - ros-<distro>-nav-msgs
- - ros-<distro>-cpp-common
+ - ros-'distro'-std-msgs
+ - ros-'distro'-sensor-msgs
+ - ros-'distro'-tf
+ - ros-'distro'-tf2
+ - ros-'distro'-pcl-conversions
+ - ros-'distro'-pcl-msgs
+ - ros-'distro'-pcl-ros
+ - ros-'distro'-nav-msgs
+ - ros-'distro'-cpp-common
 
