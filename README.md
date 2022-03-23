@@ -6,6 +6,17 @@ https://www.informatik.uni-wuerzburg.de/space/mitarbeiter/nuechter/projects/daed
 ## About the toolset
 The tools provided are ROS programs, thus you can extract the contents of the src-folder into your existing catkin-workspace's src-folder.
 
+### launch
+The important stuff first, right? 
+The launch-folder contains launchfiles to be executed with roslaunch, enabeling you to start up the nodes required for reading and publishing sensor measurements.
+ - encoder.launch : Launches the Phidgets High Speed Encoder: https://www.phidgets.com/?tier=3&prodid=37 
+ - livox.launch : Launches a LIVOX Mid-100 laserscanner: https://www.livoxtech.com/de/mid-40-and-mid-100/specs  
+ - statictf.launch : Launches a simple static transformation between the map/ and the livox_frame/ coordinate system. Note: this is only usefull if the IMU publishes in map/ frame.  
+
+Find the ROS drivers for those sensors here:
+ - https://github.com/Livox-SDK/livox_ros_driver (Build that one from source)
+ - http://wiki.ros.org/phidgets_high_speed_encoder (install ros-'distro'-phidgets_high_speed_encoder with your package manager)
+
 ### encoder_2_height
 This is a node that reads the joint states of a rotation-encoder and publishes the amount of cable that has been rolled over the cable reel, using the Helix-Arc-length formula. Radius of the large and small gears, as well as helix radius and cable diameter can be adjusted in the .cpp file directly.
 
