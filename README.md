@@ -42,7 +42,7 @@ You need to have ROS installed and a catkin workspace available.
 Tested with both noetic, kinetic, and melodic and works with Ubuntu 18.04 as well as 20.04. 
 Usually, an installation of ros-<distro>-desktop-full will do the trick.
 However, if you are having problems with your dependencies, or want to keep a minimal installation, here is a list of packages you have to install:
- - ros-<distro>-geometry-msgs
+ - ros-'distro'-geometry-msgs
  - ros-<distro>-std-msgs
  - ros-<distro>-sensor-msgs
  - ros-<distro>-tf
