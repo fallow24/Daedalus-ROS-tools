@@ -14,7 +14,7 @@ This is a node that reads the joint states of a rotation-encoder and publishes t
 This is a node that reads a Pointcloud as well as pose measurements from ROS topics, and records them on disk using the .3d and .pose format (3DTK-like, lefthanded-system OpenGL-style). The format is as follows:
  - .3d : x y z reflectance
  - .pose x y z rotX rotY rotZ
- - 
+ 
  Note that x, y, and z are given in meters, reflectance as [0-255] and rotations in degrees.
  The topics can be modified directly in the .cpp file.
 
