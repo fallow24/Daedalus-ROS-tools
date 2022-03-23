@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: livox_update_time
+Description: Description of livox_update_time
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

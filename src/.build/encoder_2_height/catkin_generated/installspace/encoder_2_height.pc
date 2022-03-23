@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: encoder_2_height
+Description: Description of encoder_2_height
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: file_writer_on_rest
+Description: Description of file_writer_on_rest
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
