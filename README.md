@@ -48,7 +48,7 @@ How to use properly:
 
 ### pose_merger
 Node that reads off the ROS topics "position" and "orientation" and publishes "pose". 
-Position must be of type geometry_msgs::Point::ConstPtr, orientation must be of type sensor_msgs::Imu::ConstPtr, and pose will be of type geometry_msgs::PoseStamped.
+Position must be of type geometry_msgs::Point, orientation must be of type sensor_msgs::Imu, and pose will be of type geometry_msgs::PoseStamped.
 
 ### testing 
 Contains simple test cases where certain ROS topics get advertised and dummy data gets published.
