@@ -40,6 +40,12 @@ In addition, the pose this time has the type of nav_msgs::Odometry::ConstPtr, ye
 Simple node to give each sensor_msgs::PointCloud2 the current time in its header.
 This might come in handy when messing around with bagfiles containing LiDAR measurements, and has been used with a LIVOX device.
 
+How to use properly:
+ - $ roscore
+ - $ rosparam set use_sim_time true
+ - $ rosrun livox_update_time livox_update_time
+ - Start your bagfile.
+
 ### pose_merger
 Node that reads off the ROS topics "position" and "orientation" and publishes "pose". 
 Position must be of type geometry_msgs::Point::ConstPtr, orientation must be of type sensor_msgs::Imu::ConstPtr, and pose will be of type geometry_msgs::PoseStamped.
